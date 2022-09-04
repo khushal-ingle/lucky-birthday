@@ -1,0 +1,60 @@
+:root{
+    --primary-dark: #28282B;
+    --primary-white:  #FDFBF9;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--primary-dark);
+    color: var(--primary-white);
+}
+h1{
+    text-align: center;
+    margin: 10rem 0rem 0rem 3rem;
+}
+label{
+    padding: 15px 10px;
+}
+.container{
+    width: 50%;
+    margin: 0px auto !important;
+}
+input,label{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+input{
+    height: 55px;
+    width: 50%;
+    margin-bottom: 0.5rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--primary-white);
+    border: 1px solid var(--primary-white);
+    border-radius: 5px;
+}
+
+
+#check-number{
+    display: block;
+    margin-top: 1rem;
+    margin: auto;
+    background: transparent;
+    color: var(--primary-white);
+    border:1px solid var(--primary-white);
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 13px 20px;
+}
+#output-box{
+    text-align: center;
+    margin: 1rem;
+}

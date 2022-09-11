@@ -26,12 +26,17 @@ checkNumber.addEventListener("click", function checkBirthdayIsLucky() {
     } else if (Number(luckyNumber.value) < 0) {
         outputBox.innerText = "Please enter values positive values in fields.";
     } else {
-        const Birthdate = dateOfBirth.value;
-        const sum = calculateSum(Birthdate);
-        if (sum && Birthdate) {
-            compareValues(sum, luckyNumber.value);
-        } else {
-            outputBox.innerText = "Please enter both the fields."
+        if (Number(dateOfBirth.value) !== 0 && Number(luckyNumber.value) !== 0) {
+            const Birthdate = dateOfBirth.value;
+            const sum = calculateSum(Birthdate);
+            if (sum && Birthdate) {
+                compareValues(sum, luckyNumber.value);
+            } else {
+                outputBox.innerText = "Please enter both the fields."
+            }
+        }
+        else{
+            outputBox.innerText=" values should be greater than 0"
         }
     }
 });
